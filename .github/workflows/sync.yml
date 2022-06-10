@@ -1,0 +1,15 @@
+name: Sync
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: jb-ext-v1 date sync
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          gitee-username: labuladong
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: labuladong/code-ext-v1
+          branch: master
