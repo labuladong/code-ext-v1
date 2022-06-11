@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      - name: jb-ext-v1 date sync
+      - name: code-ext-v1 date sync
         uses: yanglbme/gitee-pages-action@main
         with:
           gitee-username: labuladong
